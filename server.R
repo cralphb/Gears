@@ -43,7 +43,6 @@ shinyServer(function(input, output) {
   output$mpgPlot <- renderPlot({
     boxplot(as.formula(formulaText()), 
         data = mtcars,
-        pch = 2,
         col = "green")
   })
 })
