@@ -1,6 +1,9 @@
 #
-# This is the server logic of a Shiny web application
-# that return miles per gallon based on parameters entered.
+# This is the server logic of a Shiny web application that return 
+# miles per gallon based on parameters entered. It is an
+# adaptation of the RStudio Shiny tutorial on How to Build a Shiny 
+# App, which can be found here: 
+# http://shiny.rstudio.com/articles/build.html
 #
 # If viewing this file in RStudio, you can run the application by 
 # clicking the 'Run App' button above.
