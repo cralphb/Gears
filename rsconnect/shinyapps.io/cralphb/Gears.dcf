@@ -1,0 +1,10 @@
+name: Gears
+account: cralphb
+server: shinyapps.io
+appId: 125097
+bundleId: 554527
+url: https://cralphb.shinyapps.io/Gears/
+when: 1473594988.19395
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: BestMPG.html|BestMPG.md|BestMPG.Rpres|SampleResults.gif
