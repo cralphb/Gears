@@ -1,0 +1,61 @@
+Best MPG
+========================================================
+author: C Bailey
+date: 10 September 2016
+autosize: true
+
+Ever wonder how one might determine which car gets the best gas mileage?
+========================================================
+
+To demonstrate how, we
+
+- explored the Motor Trend car road test data,
+- determined which fields of data to focus on,
+- wrote a shiny app to make use of the data, and
+- developed this presentation to show it to you.
+
+Exploring the data
+========================================================
+
+We used the Motor Trends road test data from 1974, which is a default data set in RStudio. Below are the available fields of data.
+
+```{r, echo=TRUE}
+head(mtcars)
+```
+
+The Shiny App
+========================================================
+
+We wrote a Shiny app that let's one choose a parameter and return the average MPG's based on that parameter.
+
+```{r, echo=FALSE}
+library(shiny)
+
+shinyUI(pageWithSidebar(
+
+  headerPanel("Miles Per Gallon"),
+
+  sidebarPanel(
+    selectInput("variable", "Variable:",
+                list("Cylinders" = "cyl", 
+                     "Transmission" = "am", 
+                     "Gears" = "gear")),
+    
+    checkboxInput("outliers", "Show outliers", FALSE)
+  ),
+  
+  mainPanel(
+    h3(textOutput("caption")),
+    
+    plotOutput("mpgPlot")
+  )
+))
+```
+
+What you get!
+========================================================
+
+This is what the results look like. 
+
+![Sample Results](SampleResults.gif) 
+
